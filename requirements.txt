@@ -1,1 +1,3 @@
 tensorflow>=2.8.0
+dvc
+pip install ldb-alpha[s3,clip-plugin,resnet-plugin]

@@ -17,7 +17,7 @@ from dvclive import Live
 params = params = dvc.api.params_show()
 live = Live("evaluation")
 
-directory = "./data"
+directory = "data"
 user_data = directory 
 test_data = directory + "/labelbook" # this can be the labelbook, or any other test set you create
 

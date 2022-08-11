@@ -32,7 +32,7 @@ stages:
         x: step
         y: train/loss
   inference:
-    cmd: python inference.py ./data
+    cmd: python inference.py data
     deps:
     - model
     - data
@@ -42,7 +42,7 @@ stages:
   misclassification:
     cmd: 
     - ldb index predictions/ --annotation-update merge
-    - ldb instantiate ds:root --query 'inference.confidence > `0.9` && label != inference.label' --target ./mispredicted
+    - ldb instantiate ds:root --query 'inference.confidence > `0.9` && label != inference.label' --target mispredicted
     - rm -f mispredicted/*.json
     deps:
     - predictions

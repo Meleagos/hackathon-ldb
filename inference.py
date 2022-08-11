@@ -12,7 +12,7 @@ import json
 # os.chdir("/Users/dkh/downloads/Data-Centric-AI-Competition/scripts")
 # test_data =  "./label_book" # this can be the label book, or any other test set you create
 model_name = "model/best_model"
-predictions_folder = "./predictions/"
+predictions_folder = "predictions/"
 
 ### DO NOT MODIFY BELOW THIS LINE, THIS IS THE FIXED MODEL ###
 batch_size = 8
